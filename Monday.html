@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <caption>Weekly Work</caption>
+
+        <th style="background-color: brown;" colspan="8">Zak's Week</th>
+        <tr>
+            <th></th>
+            <th>monday</th>
+            <th>tuesday</th>
+            <th>wednesday</th>
+            <th>thursday</th>
+            <th>friday</th>
+            <th>saturday</th>
+            <th>sunday</th>
+        </tr>
+        <tr>
+            <th>Morning</th>
+            <td rowspan="3" colspan="7"></td>
+        </tr>
+        <tr>
+            <th>Afternoon</th>
+        </tr>
+        <tr>
+            <th>Evening</th>
+        </tr>
+        <td></td>
+    </table>
+    <H2>Contact Form</H2>
+    <form action="somewebsite.com" method="post" id="formOne">
+        <label for="FLname">What is your First Name and Last Name?</label>
+        <input type="text" placeholder="John Smith" id="FLname">
+        <h3 font="Arial">Reason for contact</h3>
+        <div>
+            <input type="radio" id="reason1" name="contact">
+            <label for="reason1">Job</label>
+            <input type="radio" id="reason2" name="contact">
+            <label for="reason2">Personal</label>
+            <input type="radio" id="reason3" name="contact">
+            <label for="reason3">Other</label>
+        </div>
+        <p></p>
+        <div>
+            <input type="checkbox" name="humancheck" id="humancheck">
+            <label for="humancheck">Are you a Human?</label>
+        </div>
+        <p></p>
+        <div>
+            <label for="favcolor">What is your favorite color?</label>
+            <select name="favcolor" id="favcolor">
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="purple">purple</option>
+            </select>
+        </div>
+        <p></p>
+        <button>submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
