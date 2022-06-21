@@ -6,36 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+            background-color: bisque;
+        }
+
+        td {
+            border: black 1px solid;
+        }
+
+        .rowOne {
+            background-color: goldenrod;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>ZAK's WEBPAGE</h1>
-    <table>
-        <caption>Weekly Work</caption>
-
+    <h1 style="font-family: cursive;">ZAK's WEBPAGE</h1>
+    <table style="align-content: center;">
+        <caption>Schedule</caption>
         <th style="background-color: brown;" colspan="8">Zak's Week</th>
-        <tr>
+        <tr class="rowOne">
             <th></th>
-            <th>monday</th>
-            <th>tuesday</th>
-            <th>wednesday</th>
-            <th>thursday</th>
-            <th>friday</th>
-            <th>saturday</th>
-            <th>sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
         </tr>
         <tr>
             <th>Morning</th>
-            <td rowspan="3" colspan="7"></td>
+            <td style="background-color: rgb(150, 82, 0)" rowspan="2" colspan="5">Code Academy</td>
+
+            /* the background of the weekend wont become aqua*/
+            <td style="border: black 1px solid" style="background-color: aqua;" rowspan="2" colspan="2">Study</td>
         </tr>
         <tr>
             <th>Afternoon</th>
         </tr>
         <tr>
             <th>Evening</th>
+            <td>Rest</td>
+            <td>Elden Ring</td>
+            <td>Study</td>
+            <td>Study</td>
+            <td>Clean </td>
+            <td>Make Dinner</td>
+            <td>Reset</td>
         </tr>
         <td></td>
     </table>
+    <hr style="height: 10px;" style="content: black;">
     <H2>Contact Form</H2>
     <form action="somewebsite.com" method="post" id="formOne">
         <label for="FLname">What is your First Name and Last Name?</label>
