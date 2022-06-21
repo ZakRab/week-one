@@ -1,0 +1,78 @@
+<!-- Below is an example of improper use of DRY Practices, taking what you know, fix the CSS AND the HTML to follow DRY practices-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DRY CSS</title>
+    <style>
+      * {
+        color: white;
+      }
+
+      div {
+        display: inline-block;
+        margin: 5px;
+      }
+/* ------------------------------Sizing----------------------- */
+      .small-class {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+      }
+      .large-class {
+        height: 200px;
+        width: 200px;
+        line-height: 200px;
+      }
+/* -----------------------------alignment---------------------------- */
+      .centering{
+        text-align: center;
+      }
+
+      .righting{
+        text-align: right;
+      }
+/* ---------------------------bordering------------------------------- */
+      .div1 {
+        border: 1px solid
+      }
+
+      .div2 {
+        border: red solid 1px;
+      }
+      
+      .border-rad10{
+        border-radius: 10px;
+      }
+      .black-border{
+        border-color: black;
+      }
+      .large-border{
+        border-width: 2px;
+        border-style: solid;
+      }
+/* _______________________Background coloring_________________________________ */
+      .blue-class{
+        background-color: #0088ff;
+      }
+      .orange-class{ 
+        background-color: #ffa500;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="centering orange-class">DRY CSS</h3>
+    <div class="div1 black-border centering orange-class large-class">Div 1</div>
+    <div class="div1 black-border centering orange-class large-class">Div 2</div>
+    <div class="div2 large-border border-rad10 centering orange-class large-class">Div 3</div>
+    <div class="div2 large-border border-rad10 centering orange-class large-class">Div 4</div>
+    <div class="div3 large-border blue-class black-border border-rad10 centering small-class">Div 5</div>
+    <div class="div3 large-border blue-class black-border border-rad10 centering small-class">Div 6</div>
+    <div class="div3 large-border blue-class black-border border-rad10 centering small-class">Div 7</div>
+    <div class="div4 small-class righting blue-class">Div 8</div>
+    <div class="div4 small-class righting blue-class">Div 9</div>
+    <div class="div4 small-class righting blue-class">Div 10</div>
+    <h3 class= "bottom-heading righting blue-class">What can we fix?</h3>
+  </body>
+</html>
