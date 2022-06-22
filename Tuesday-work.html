@@ -1,99 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Bob</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="https://icon-library.com/images/bob-ross-icon/bob-ross-icon-6.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://icon-library.com/images/bob-ross-icon/bob-ross-icon-6.jpg">
 
     <style>
-    *{
-        background-color: #4d4b0f;
-    }
-    header{
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: #6ab8e2;
-    }
-    ul{
-        font-family: 'Fascinate', cursive;
-        display: inline;
+        * {
+            background-color: #4d4b0f;
 
-    }
-    p{ 
-        font-size: 25px;
-        color: #527046;
-    }
-    footer{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    #lists{
-        color: #A5CFE7;
-    }
+        }
 
+        header {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #6ab8e2;
+        }
 
-    /* ----------------------painting stuff---------------- */
-    .painting{
-        height: 400px;
-        border-radius: 150px;
-    }
-    .painting:hover{
-        border-radius: 0%;
-    }
-    /* -----------------------alignment------------------------ */
-    .center{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .l-third{
-        margin-left: 25%
-    }
-    .r-third{
-        margin-left: 75%
-    }
+        ul {
+            font-family: 'Fascinate', cursive;
+            display: inline;
 
+        }
+
+        p {
+            font-size: 25px;
+            color: #527046;
+        }
+
+        footer {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #lists {
+            color: #A5CFE7;
+        }
+
+        a {
+            color: blue;
+        }
+
+        a:visited {
+            color: red;
+
+        }
+
+        /* ----------------------painting stuff---------------- */
+        .painting {
+            height: 400px;
+            border-radius: 150px;
+        }
+
+        .painting:hover {
+            border-radius: 0%;
+        }
+
+        /* -----------------------alignment------------------------ */
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .larger-text {
+            font-size: 20px;
+
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-around
+        }
     </style>
 </head>
-<body>
-<main>
-   <header>
-       <h1 class="center">Painting of Catskill Mountains</h1>
-       
-       <h2 class="center">By Bob Ross</h2>
-</header>
-<section>
-    <img class="painting center" src="https://i5.walmartimages.com/asr/3b2e3a3a-9f74-4fea-bd1d-0a019fc83f12.87364d542d0ff4aea896c2b53ce3b860.jpeg" alt="painting">
-</section>
-<div>
-    <h3 class="l-third">Skills and Specializations</h3>
-    <h3 class="r-third">Particular Interests</h3>
-</div>
-<div id=lists >
-    <div class="l-third">
-    <ul>
-        <li>Painting</li>
-        <li>Being a tv show host</li>
-        <li>Spreading love</li>
-    </ul>
-    <div class="r-third">
-    <ul>
-        <li>Also Painting</li>
-        <li>Experiencing Nature</li>
-        <li>Being a Hippie </li>
-    </ul>
-    </div>
-</div>
-<hr>
-<footer>
-<p class="center"> Send all inquiries to: <Br> Bob Ross <br> 400 Woodlawn Cemetery Rd., Gotha, FL 34734</p>
-<p ><a class="center"href="mailto:someone@example.com">Bob.Ross@aol.com</a></p>
-</footer>
 
-</main>
+<body>
+    <main>
+        <header>
+            <h1 class="center">Painting of Catskill Mountains</h1>
+
+            <h2 class="center">By Bob Ross</h2>
+        </header>
+        <section>
+            <img class="painting center"
+                src="https://i5.walmartimages.com/asr/3b2e3a3a-9f74-4fea-bd1d-0a019fc83f12.87364d542d0ff4aea896c2b53ce3b860.jpeg"
+                alt="painting">
+        </section>
+        <div>
+        </div>
+        <div class="flex" id=lists>
+            <div class="flex">
+                <ul>
+                    <p class="larger-text">skills and Specializations</p>
+                    <li>Painting</li>
+                    <li>Being a tv show host</li>
+                    <li>Spreading love</li>
+                </ul>
+                <div class="flex">
+                    <ul>
+                        <p class="larger-text">Particular Interests</p>
+                        <li>Also Painting</li>
+                        <li>Experiencing Nature</li>
+                        <li>Being a Hippie </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <p class="center"> Send all inquiries to: <Br> Bob Ross <br> 400 Woodlawn Cemetery Rd., Gotha, FL 34734
+            </p>
+            <p><a class="center" href="mailto:someone@example.com">Bob.Ross@aol.com</a></p>
+            <p><a class="center" target="_blank" href="https://www.bobross.com/">MY WEBSITE</a></p>
+        </footer>
+
+    </main>
 </body>
+
 </html>
