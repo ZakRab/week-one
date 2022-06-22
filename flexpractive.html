@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+            color: white;
+            margin: 5px;
+            font-size: 40px;
+
+        }
+
+        /* -----------------------flex------------------- */
+
+        .flex-main {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .flex-section1 {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .flex-section2 {
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .three-fourths {
+            flex-basis: 75%;
+        }
+
+        .one-fourth {
+            flex-basis: 25%;
+        }
+
+        .base300px {
+            flex-basis: 300px;
+            flex-grow: 1;
+        }
+
+        .space-even {
+            justify-content: space-evenly;
+        }
+
+        .one-whole {
+            flex-basis: 100%;
+        }
+
+        /* -----------------------Sizing and Ordering------------------- */
+        .height300px {
+            height: 300px;
+        }
+
+        .height150px {
+            height: 150px;
+        }
+
+        .first {
+            order: -3;
+        }
+
+        .second {
+            order: -2;
+        }
+
+        .fourth {
+            order: 1;
+        }
+
+        .fifth {
+            order: 2;
+        }
+
+        .last {
+            order: 100;
+        }
+
+        /* -----------------------Colors------------------- */
+
+        .bg-white {
+            background-color: white;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .bg-red {
+            background-color: red;
+            flex-grow: 1;
+            margin-top: 20px;
+        }
+
+        .bg-black {
+            background-color: black;
+        }
+
+        .border-black {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex">
+        <div class="one-whole bg-black">Header</div>
+    </header>
+    <main class="flex">
+        <section class=" flex-section1 bg-white three-fourths">
+            <div class="base300px height300px bg-blue border-black first">1</div>
+            <div class="base300px height300px bg-blue border-black">2</div>
+            <div class="base300px height300px bg-blue border-black last">3</div>
+            <div class="base300px height300px bg-blue border-black fifth">4</div>
+            <div class="base300px height300px bg-blue border-blac fourth">5</div>
+            <div class="base300px height300px bg-blue border-black second">6</div>
+        </section>
+        <section class="flex-section2 bg-white one-fourth" id="section2">
+            <div class="height150px space-even bg-red border-black">1</div>
+            <div class="height150px space-even bg-red border-black">2</div>
+            <div class="height150px space-even bg-red border-black">3</div>
+        </section>
+    </main>
+    <footer class="flex">
+        <div class="one-whole bg-black">Footer</div>
+    </footer>
+
+</body>
+
+</html>
