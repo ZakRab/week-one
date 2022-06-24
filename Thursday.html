@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        /* -------------------------------alignnment------------------------- */
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        /* -------------------------------flexes------------------------- */
+        .flexify {
+            display: flex;
+        }
+
+        .flex-header {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .flexmain {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .flex-section1 {
+            flex-basis: 30%;
+        }
+
+        .flex-section2 {
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex-basis: 70%;
+        }
+
+        .flex-articles {
+            flex-basis: content;
+        }
+
+        .flex-nav-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .flex-navs {
+            flex-basis: 25%;
+        }
+
+        .flex-basis-content {
+            flex-basis: content;
+        }
+
+        .flex-center {
+            justify-content: space-evenly;
+        }
+
+        /* -------------------------------aseathisics------------------------- */
+        .bg-gray {
+            background-color: gray;
+        }
+
+        .bg-light-gray {
+            background-color: rgb(239, 239, 239);
+        }
+
+        .bg-fish {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Oncorhynchus_nerka.jpg/1280px-Oncorhynchus_nerka.jpg");
+            height: 80px;
+            background-size: contain;
+            background-repeat: repeat;
+            background-color: aqua;
+        }
+
+        .flex-bear-png {
+            flex-shrink: 1;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        .margin5px {
+            margin: 5px;
+        }
+
+        .t-pad30px {
+            padding-top: 16px;
+        }
+
+        .t-pad10px {
+            padding-top: 10px;
+        }
+
+        .r-pad10px {
+            padding-right: 30px;
+        }
+
+        .border-black {
+            border: black solid 1px;
+        }
+
+        /* -------------------------------sizes + font------------------------- */
+
+        .width100p {
+            width: 100%;
+        }
+
+        .width93p {
+            width: 95%;
+        }
+
+
+        .width85p {
+            width: 85%;
+        }
+
+        .width15p {
+            width: 15%;
+        }
+
+
+        .height61px {
+            height: 61px
+        }
+
+        .height100px {
+            height: 100px;
+        }
+
+        .font-larger {
+            font-size: 30px;
+        }
+
+        .align-self {
+            align-self: flex-start;
+        }
+
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .text-shadow-black {
+            text-shadow: 1px 2px black;
+        }
+
+        .text-shadow-white {
+            text-shadow: 1px .5px white;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        /* -------------------------------effects------------------------- */
+        .flex-navs:hover {
+            background-color: grey;
+            color: white;
+        }
+
+        .dropdown {
+            display: none;
+        }
+
+        @media (max-width: 630px) {
+            .original-list {
+                display: none;
+            }
+
+            .dropdown {
+                display: flex
+            }
+        }
+
+        body {
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-right flexify flex-header ">
+        <img class="height61px" src="./bear-fishing.png" alt="bear with fish">
+        <div
+            class="bg-gray flex-grow-1 text-white font-larger times-new-roman text-shadow-black t-pad30px r-pad10px bold">
+            HUNGRY BEAR FISHERIES</div>
+    </header>
+    <nav class="flexify flex-nav-container text-center width100p bg-light-gray margin5px">
+        <a href="https://apple.com" class="flex-navs text-black text-decoration-none">Our Fish</a>
+        <a href="" class="flex-navs text-black text-decoration-none">Conservation</a>
+        <a href="" class="flex-navs text-black text-decoration-none">About Us</a>
+        <a href="" class="flex-navs text-black text-decoration-none">Contact Us</a>
+    </nav>
+    <main class="flexify flexmain">
+        <section class="flex-section1">
+            <ul class="text-center original-list">
+                <h5>Currently Available</h5>
+                <li>Atlantic Salmon</li>
+                <li>Coho Salmon</li>
+                <li>Chinook Salmon</li>
+                <li>Sockeye Salmon</li>
+                <li>Pink Salmon</li>
+                <li>Rainbow Salmon</li>
+            </ul>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Availablility
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>Atlantic Salmon</li>
+                    <li>Coho Salmon</li>
+                    <li>Chinook Salmon</li>
+                    <li>Sockeye Salmon</li>
+                    <li>Pink Salmon</li>
+                    <li>Rainbow Salmon</li>
+                </ul>
+            </div>
+        </section>
+        <section class="flexify flex-section2">
+            <div class="flexify flex-column">
+                <div class="flexify">
+                    <img class="height100px " src="./fish1.png" alt="fish1" title="Salmon">
+                    <article class="flex-articles width85p"> "Lorem ipsum dolor sit
+                        amet consectetur
+                        adipisicing elit. Reiciendis,
+                        inventore. Temporibus non aliquam, officiis vero reprehenderit maiores ullam vel deserunt beatae
+                        iure Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae harum reiciendis
+                        quibusdam. Quis recusandae vitae quia ratione quaerat doloribus veritatis rerum architecto
+                        modi consectetur iste voluptatum, quaerat, quidem facilis ipsa."</article>
+                </div>
+                <div class="flexify">
+                    <img class="height100px  align-self" src="./fish2.png" alt="fish2">
+                    <article class="flex-articles width85p">"Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Reiciendis,
+                        inventore. Temporibus non aliquam, officiis vero reprehenderit maiores ullam vel deserunt beatae
+                        iure Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam perspiciatis ipsam
+                        beatae saepe veritatis ad sed impedit quidem quibusdam voluptate natus, atque dolorum aliquam!
+                        modi consectetur iste voluptatum, quaerat, quidem facilis ipsa."</article>
+                </div>
+                <div class="flexify">
+                    <img class="height100px" src="./fish3.png" alt="fish3">
+                    <article class="flex-articles width85p">"Lorem ipsum dolor sit amet
+                        "consectetur
+                        adipisicing elit. Reiciendis,
+                        inventore. Temporibus non aliquam, officiis vero reprehenderit maiores ullam vel deserunt beatae
+                        iure Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione sunt atque officia autem
+                        perferendis reiciendis. Eaque non odit similique cupiditate voluptatum atque sequi, obcaecati
+                        modi consectetur iste voluptatum, quaerat, quidem facilis ipsa."</article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer class="flexify">
+        <div class="text-center flex-center bg-fish times-new-roman font-larger bold text-shadow-white t-pad10px border-black"
+            style="padding-left: 36%; padding-right: 35%;">
+            Only
+            The Freshest
+            Fish
+            Around
+        </div>
+    </Footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
